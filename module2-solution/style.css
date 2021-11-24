@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section {
+    width: 30%;
+    float: left;
+    border: 3px solid black;
+    box-sizing: border-box;
+    margin-left: 2.5%;
+    background-color: darkgray;
+}
+
+p {
+    padding: 5px 10px;
+    margin: 0;
+}
+
+h2 {
+    width: 30%;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    position: relative;
+    left: 70%;
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#chicken {
+    background-color: rgb(231, 186, 178);
+}
+
+#beef {
+    color: white;
+    background-color: rgb(199, 50, 50);
+}
+
+#sushi {
+    background-color: rgb(243, 229, 151);
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1090px) {
+    h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+    section {
+        width: 46.25%;
+        margin: 0 0 2.5% 2.5%;
+       
+    }
+
+    section:last-of-type {
+        width: 95%;
+        margin: 0 2.5%;
+    }
+
+    section:last-of-type h2 {
+        width: 14%;
+        left: 86%;
+    }
+}
+
+@media screen and (max-device-width: 767px) {
+    section {
+        width: 80%;
+        margin: 0 10%;
+        margin-bottom: 2.5%;
+    }
+}
+
+@media screen and (max-device-width: 410px) {
+    h2 {
+        font-size: 15px;
+    }
+}
